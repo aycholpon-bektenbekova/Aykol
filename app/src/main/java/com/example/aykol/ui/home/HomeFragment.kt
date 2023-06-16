@@ -45,18 +45,18 @@ class HomeFragment : Fragment() {
         binding.rvNews.adapter = adapter
 
         adapter.run {
-            addItems(News(R.drawable.news.toString(), getString(R.string.news), 1))
-            addItems(News(R.drawable.news.toString(), getString(R.string.news), 1))
-            addItems(News(R.drawable.news.toString(), getString(R.string.news), 1))
-            addItems(News(R.drawable.news.toString(), getString(R.string.news), 1))
-            addItems(News(R.drawable.news.toString(), getString(R.string.news), 1))
-            addItems(News(R.drawable.news.toString(), getString(R.string.news), 1))
-            addItems(News(R.drawable.news.toString(), getString(R.string.news), 1))
-            addItems(News(R.drawable.news.toString(), getString(R.string.news), 1))
+            addItems(Model(R.drawable.news.toString(), getString(R.string.news), 1))
+            addItems(Model(R.drawable.news.toString(), getString(R.string.news), 1))
+            addItems(Model(R.drawable.news.toString(), getString(R.string.news), 1))
+            addItems(Model(R.drawable.news.toString(), getString(R.string.news), 1))
+            addItems(Model(R.drawable.news.toString(), getString(R.string.news), 1))
+            addItems(Model(R.drawable.news.toString(), getString(R.string.news), 1))
+            addItems(Model(R.drawable.news.toString(), getString(R.string.news), 1))
+            addItems(Model(R.drawable.news.toString(), getString(R.string.news), 1))
         }
     }
-    private fun click(news: News) {
-        if (news.keyId == 1)
+    private fun click(model: Model) {
+        if (model.keyId == 1)
             findNavController().navigate(R.id.newsFragment)
     }
 

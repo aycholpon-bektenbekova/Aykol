@@ -1,4 +1,4 @@
-package com.example.aykol.ui.notifications
+package com.example.aykol.ui.profile
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

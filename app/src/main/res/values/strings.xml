@@ -15,4 +15,8 @@
     <string name="next">Продолжить</string>
     <string name="inputs">Заполните поля</string>
     <string name="news">В мэрии объяснили, почему Бишкеку не хватает воды. И что они делают, чтобы решить проблему</string>
+    <string name="school">Цифровая школа</string>
+    <string name="record">Запись к врачу</string>
+    <string name="house">Имущество</string>
+    <string name="papers">Выписки</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.aykol.ui.dashboard
+package com.example.aykol.ui.services
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -10,13 +10,13 @@ import com.example.aykol.databinding.NewsItemBinding
 
 class NewsAdapter(
     val context: Fragment,
-    private val onClick: (News) -> Unit
+    private val onClick: (Model) -> Unit
 ) : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
-    private var items = arrayListOf<News>()
+    private var items = arrayListOf<Model>()
 
-    fun addItems(news: News){
-        items.add(news)
+    fun addItems(model: Model){
+        items.add(model)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
@@ -35,11 +35,11 @@ class NewsAdapter(
     }
 
     inner class NewsViewHolder(private val binding: NewsItemBinding): RecyclerView.ViewHolder(binding.root) {
-        fun bind(news: News) {
+        fun bind(model: Model) {
             itemView.setOnClickListener {
-                onClick.invoke(news)
+                onClick.invoke(model)
             }
-            binding.itemTv.text = news.title
+            binding.itemTv.text = model.title
             Glide.with(context).load(R.drawable.news).into(binding.img)
         }
     }

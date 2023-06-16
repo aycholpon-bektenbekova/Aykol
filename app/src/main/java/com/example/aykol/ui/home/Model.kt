@@ -1,6 +1,6 @@
 package com.example.aykol.ui.home
 
-data class News(
+data class Model(
     var image: String? = null,
     var title: String? = null,
     var keyId: Int = 0
