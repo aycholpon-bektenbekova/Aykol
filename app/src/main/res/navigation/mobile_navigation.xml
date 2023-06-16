@@ -27,4 +27,9 @@
         android:id="@+id/authFragment"
         android:name="com.example.aykol.AuthFragment"
         tools:layout="@layout/fragment_auth" />
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.aykol.NewsFragment"
+        tools:layout="@layout/fragment_news" />
 </navigation>
