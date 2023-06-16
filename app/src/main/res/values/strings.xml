@@ -6,4 +6,12 @@
     <string name="title_news">Новости</string>
     <string name="title_services">Услуги</string>
     <string name="title_profile">Профиль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="auth">Авторизуйтесь</string>
+    <string name="inn">Персональный номер</string>
+    <string name="password">Пароль</string>
+    <string name="_10">Персональный номер состоит из 10 значений</string>
+    <string name="next">Продолжить</string>
+    <string name="inputs">Заполните поля</string>
 </resources>
