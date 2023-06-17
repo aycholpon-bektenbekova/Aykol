@@ -15,8 +15,8 @@ class NewsAdapter(
 
     private var items = arrayListOf<Model>()
 
-    fun addItems(model: Model){
-        items.add(model)
+    fun addItems(itemList: List<Model>){
+        items.addAll(itemList)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
@@ -40,7 +40,6 @@ class NewsAdapter(
                 onClick.invoke(model)
             }
             binding.itemTv.text = model.title
-            Glide.with(context).load(R.drawable.news).into(binding.img)
         }
     }
 }

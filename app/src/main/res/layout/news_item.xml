@@ -18,11 +18,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/img"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/news"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
 

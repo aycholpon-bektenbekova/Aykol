@@ -7,7 +7,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="68dp"
-        android:backgroundTint="@color/white_gray"
+        android:backgroundTint="#DDE9FA"
         android:layout_marginVertical="@dimen/_10dp"
         app:cardCornerRadius="@dimen/_10dp">
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -34,7 +34,17 @@
                 app:layout_constraintTop_toTopOf="@id/img"
                 android:layout_marginStart="@dimen/_20dp"
                 android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:focusable="true" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
-
 </FrameLayout>

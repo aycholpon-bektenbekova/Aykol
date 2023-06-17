@@ -3,12 +3,136 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewsFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.NewsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
 
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp">
+
+   <TextView
+       android:id="@+id/source"
+       android:layout_width="match_parent"
+       android:layout_height="49dp"
+       android:text="@string/kaktus_media"
+       android:textColor="@color/black"
+       app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:paddingVertical="10dp"
+      android:paddingHorizontal="@dimen/_20dp"
+      android:textSize="20sp"
+      android:background="@color/white_gray"/>
+
+   <TextView
+       android:id="@+id/title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/source"
+      android:text="@string/news"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:layout_margin="@dimen/_20dp"/>
+
+   <TextView
+       android:id="@+id/data"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="@id/title"
+      app:layout_constraintTop_toBottomOf="@id/title"
+      android:text="@string/data"
+      android:textColor="@color/black"
+      android:layout_marginTop="10dp"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="@string/journalist_name"
+      android:textColor="@color/blue"
+      app:layout_constraintStart_toEndOf="@id/data"
+      app:layout_constraintTop_toBottomOf="@id/title"
+      android:layout_marginTop="10dp"
+      android:layout_marginStart="@dimen/_20dp"/>
+
+   <TextView
+       android:id="@+id/tv1"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+      android:text="@string/news1"
+      android:layout_marginHorizontal="@dimen/_20dp"
+       android:layout_marginTop="10dp"
+      android:textColor="@color/black"
+      app:layout_constraintTop_toBottomOf="@id/data"
+      android:textSize="@dimen/_20sp"/>
+
+   <ImageView
+       android:id="@+id/image"
+       android:layout_width="wrap_content"
+       android:layout_height="170dp"
+      android:src="@drawable/news"
+      app:layout_constraintTop_toBottomOf="@id/tv1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="@dimen/_20dp"/>
+
+         <TextView
+             android:id="@+id/tv2"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:text="@string/news2"
+             android:layout_marginHorizontal="@dimen/_20dp"
+             android:layout_marginTop="10dp"
+             android:textColor="@color/black"
+             app:layout_constraintTop_toBottomOf="@id/image"
+             android:textSize="@dimen/_20sp"/>
+
+         <TextView
+            android:id="@+id/comments"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:text="@string/comments"
+            android:textSize="@dimen/_20dp"
+            android:textColor="@color/blue"
+            app:layout_constraintStart_toStartOf="@id/tv2"
+            app:layout_constraintTop_toBottomOf="@id/tv2"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="@dimen/_20dp"/>
+
+         <EditText
+             android:id="@+id/et"
+             android:layout_width="match_parent"
+             android:layout_height="58dp"
+            app:layout_constraintStart_toStartOf="@id/comments"
+            app:layout_constraintTop_toBottomOf="@id/comments"
+            android:hint="@string/comment_hint"
+             android:paddingStart="@dimen/_10dp"
+            android:textColor="@color/black"
+             android:layout_marginHorizontal="@dimen/_20dp"
+             android:layout_marginTop="@dimen/_10dp"
+             android:background="@drawable/edit_text_border"
+             android:layout_marginBottom="20dp"/>
+          
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/et"
+              android:background="#DDE9FA"
+              android:text="@string/comment_user"
+               android:layout_margin="@dimen/_20dp"
+              android:padding="@dimen/_10dp"
+              android:textColor="@color/black"
+              android:textSize="16sp"
+              android:layout_marginBottom="@dimen/_40dp"
+              app:layout_constraintBottom_toBottomOf="parent"/>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+   </ScrollView>
 </FrameLayout>

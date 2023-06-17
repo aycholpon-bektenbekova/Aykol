@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/cv"
+       android:layout_width="match_parent"
+       android:layout_height="132dp"
+       android:backgroundTint="@color/blue"
+       app:layout_constraintTop_toTopOf="parent"
+       android:clickable="true"
+       android:focusable="true">
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/profileImage"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               android:background="@color/white"
+               app:layout_constraintBottom_toBottomOf="parent"
+               android:layout_marginStart="@dimen/_20dp"/>
+
+           <TextView
+               android:id="@+id/tv1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/no_data"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:textSize="@dimen/_20sp"
+               app:layout_constraintStart_toEndOf="@id/profileImage"
+               app:layout_constraintTop_toTopOf="@id/profileImage"
+               android:layout_marginStart="@dimen/_20dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/example_gmail"
+               android:textColor="@color/white"
+               app:layout_constraintStart_toStartOf="@id/tv1"
+               app:layout_constraintTop_toBottomOf="@id/tv1"/>
+
+           <ImageView
+               android:id="@+id/nextProfile"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/profile_next"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               android:layout_marginEnd="@dimen/_20dp"
+               android:clickable="true"
+               app:layout_constraintBottom_toBottomOf="parent"
+               android:focusable="true" />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProfile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv"
+        android:layout_margin="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        tools:listitem="@layout/profile_item"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,9 +19,9 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.aykol.ui.profile.NotificationsFragment"
+        android:name="com.example.aykol.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/authFragment"
@@ -30,6 +30,27 @@
 
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.example.aykol.NewsFragment"
+        android:name="com.example.aykol.ui.home.NewsFragment"
         tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.example.aykol.ui.services.RecordFragment"
+        android:label="@string/record"
+        tools:layout="@layout/fragment_record" />
+    <fragment
+        android:id="@+id/houseFragment"
+        android:name="com.example.aykol.ui.services.HouseFragment"
+        android:label="@string/house"
+        tools:layout="@layout/fragment_house" />
+
+    <fragment
+        android:id="@+id/profileOptionsFragment"
+        android:name="com.example.aykol.ui.profile.ProfileOptionsFragment"
+        tools:layout="@layout/fragment_profile_options" />
+
+    <fragment
+        android:id="@+id/CFMFragment"
+        android:name="com.example.aykol.ui.services.CFMFragment"
+        tools:layout="@layout/fragment_c_f_m" />
 </navigation>
