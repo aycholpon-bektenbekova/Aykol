@@ -11,7 +11,7 @@
     <string name="auth">Авторизуйтесь</string>
     <string name="inn">Персональный номер</string>
     <string name="password">Пароль</string>
-    <string name="_10">Персональный номер состоит из 10 значений</string>
+    <string name="_10">Персональный номер состоит из 14 значений</string>
     <string name="next">Продолжить</string>
     <string name="inputs">Заполните поля</string>
     <string name="news">В мэрии объяснили, почему Бишкеку не хватает воды. И что они делают, чтобы решить проблему</string>

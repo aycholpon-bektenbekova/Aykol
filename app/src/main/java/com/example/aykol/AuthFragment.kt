@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.aykol.databinding.FragmentAuthBinding
+import com.google.android.material.navigation.NavigationView
 
 class AuthFragment : Fragment() {
 
@@ -27,7 +28,7 @@ class AuthFragment : Fragment() {
     }
 
     private fun personNumberCheck() {
-        if (binding.personNumber.minEms != 10) {
+        if (binding.personNumber.minEms < 14) {
             Toast.makeText(requireContext(), getString(R.string._10), Toast.LENGTH_SHORT).show()
         }
     }
